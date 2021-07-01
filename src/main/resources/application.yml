@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:oracle:thin:@127.0.0.1:1521:xe
     password: 123456
-    username: HR
+    username: hisdemo
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: oracle.jdbc.driver.OracleDriver
     filter: stat
