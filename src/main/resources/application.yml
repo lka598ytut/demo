@@ -13,7 +13,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
 
 mybatis:
-  type-aliases-package: cn.gson.boot02106.model.pojos
+  type-aliases-package: cn.gson.demo.model.pojos
   mapper-locations: classpath:mappers/*.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

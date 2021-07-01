@@ -8,11 +8,8 @@
     <class>cn.gson.demo.model.pojos.Department</class>
     <class>cn.gson.demo.model.pojos.Dept</class>
     <class>cn.gson.demo.model.pojos.Employee</class>
-    <class>cn.gson.demo.model.pojos.EmpRole</class>
     <class>cn.gson.demo.model.pojos.Perm</class>
     <class>cn.gson.demo.model.pojos.Roleinfo</class>
-    <class>cn.gson.demo.model.pojos.RoleDept</class>
-    <class>cn.gson.demo.model.pojos.RolePerm</class>
     <class>cn.gson.demo.model.pojos.Schedu</class>
     <class>cn.gson.demo.model.pojos.Shift</class>
     <class>cn.gson.demo.model.pojos.ShiftType</class>
