@@ -3,10 +3,7 @@ package cn.gson.demo.controller;
 import cn.gson.demo.model.pojos.Dept;
 import cn.gson.demo.model.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -17,11 +14,20 @@ import java.util.Map;
 public class DeptController {
 
     @Autowired
-    DeptService dept;
+    DeptService ser;
 
     @GetMapping("/allDept")
     public Map<String, Object> allDept(Integer pageNo, Integer size){
-        return dept.allDept(pageNo,size);
+        return ser.allDept(pageNo,size);
+    }
+
+    @PostMapping("/addDept")
+    public String addDept(@RequestBody Dept dept){
+        Dept de=ser.addDept(dept);
+        if(de==null){
+            return "flia";
+        }
+        return "ok";
     }
 
 }

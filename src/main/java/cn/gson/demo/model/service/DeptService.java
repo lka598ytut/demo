@@ -29,4 +29,9 @@ public class DeptService {
         map.put("total",page.getTotalElements());
         return map;
     }
+
+    public Dept addDept(Dept dept) {
+        Dept de = dao.save(dept);
+        return de;
+    }
 }

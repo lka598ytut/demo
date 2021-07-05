@@ -126,4 +126,5 @@ public class Dept {
     public int hashCode() {
         return Objects.hash(deptId, deptName, deptCreate);
     }
+
 }
